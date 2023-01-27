@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 15vh;
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUTITEhJSkrOjo6Fx8/ODMtNyg5LjcBCgoKDQ0NFQ0PDy0ZFRkrKy0rLSsrKysrLSsrKys3Ky0rKzctLS0tKy0rKzcrLS03LTctLSstNy0rLS0tLS0rLf/AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIDBAf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARESAv/EABgBAQEBAQEAAAAAAAAAAAAAAAEAAgYF/8QAGBEBAQEBAQAAAAAAAAAAAAAAABEBEgL/2gAMAwEAAhEDEQA/APnfmOkg8xuOgzHgbpjUEajTGqFQxpnSkSyikkiiQCigkUgkUUCigCkEkUgkUjRiIBqxWIjWs1mxmt1miNZrFjFdKzYzGq53ymyzGnkkaikakbW6pGooSwoUWhqKJZSKQWFFIHCiEiUKEUgkUkDhSARxJJYUkMDSBZxUiogY0sBxjGbHSs1mN1zTWIRp5pGpBGpDmLdWNKQtM1QowgHCkEcWHCKsWHDiFGFYcIoJxILFhWJAlIBFJJJJJFJBEA0BrAlRiqxAis2Ns2BqsJvEI08sjUUhJ3UVI0WRhw4SBhw4cQEOHDCKFhKAwnDhFZw4cOIVnDhwpVnE0kGVjSSZxY0kgikmUUCBjSxFkY3gwFnBY3iwNOaawJV5mpBGk0jFCQpDIoSEUUysKkOEI4jiFBwnCAsaxYhRixrFiVZxY1gxCjFhSNZTSSZJQQwNYsRGDGsWAsrGsWIs4Maw2BvGMTWIF44YCUYUSEYjEyijCFCjEEUSFI1IjEypDhhxJnFjWJJnBjWJBnA0EgikQsaSQRwhoYGog0KMKBwRYiNbxjCUE8MMRbChUMQUagJZTQhIJBiBMUKZMMDUQMawQpLAQkBSCECkgikQUgUokDhFIDVWBBKpDRojWadiZQh6eWNCGNLTDFCQjFCmUUiDClEDDESE0CmTCEkUEkkkggUiEQkkkkkkCgkGkEEkKgGggUnCNQRotIqGFlFYcQRRwgGIoKFFBGIkJIoJJJJJBBFYkEQiEUkEQiERgIFIqTINAOBJBpzjUikakaWrDikOEVYcUjUiZrOHGpDiFZkONSHCKzixrFiFGHDhxCs4caxSJDFjWKRFnFjeLkKMYsb5XKMYwY6YsSjnixuxYg54sdORyi54sb5WAudjOOtjNiTlYLHSxiwHNYTWJNMSNyDy3IRuiRqQyNSNM1mRqRqeW55SYnkzy6crkKMTyeXTk8qqOXK5duVyqN8uOHl04PJEc55XLryZ5FMc+TPLrPKnkNRz5XLryeVTHHlcu3K5VMceVy7crkVRw4XLtyuTRy4crl2vkcpRx5F8u18jkKON8s3y7WMYRuONjFjvY52IOWJvEi4+XTyksXp08xqQostTy3IkG8a5M8pAtTyZEkWp5XKSMXK5STMPJ5SRhnlYkkcOJBpcrEkVysSQXI5CSV8jlJAcs3ykkzY5+oUmdc7HOwosa56kiX//2Q==");
+  background-size: cover;
+  background-position: center;
+}
+.Lognav img {
+  height: 7rem;
+  width: 9rem;
+  object-fit: contain;
+  /* object-position: center; */
+}
+header nav a {
+  height: 3rem;
+  width: 6rem;
+  text-align: center;
+  box-shadow: 20px 20px 60px #2424249e, -20px -20px 60px #4747478f;
+}
+
+main {
+  min-height: 75vh;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.carousel {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.car h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+.car1 h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+.car2 h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+.car3 h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+
+.car4 h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+.card {
+  box-shadow: 20px 20px 60px #b2b2b2, -20px -20px 60px #ffffff;
+}
+footer {
+  height: 10vh;
+  border-top: 0.1rem solid grey;
+}
+.smicons a img {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Event page */
+.card-event {
+  height: 60vh;
+  width: 60vw;
+  box-shadow: 20px 20px 60px #b2b2b2, -20px -20px 60px #ffffff;
+  border: 0.1rem solid rgba(154, 154, 154, 0.453);
+}
+.card-event img {
+  height: 45vh;
+  width: 25vw;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 20px 20px 60px #b2b2b2, -20px -20px 60px #ffffff;
+}
+.card-event div {
+  height: 45vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 0.1rem solid rgba(154, 154, 154, 0.453);
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tab {
+  width: 80vw;
+  margin-bottom: 3rem;
+  box-shadow: 20px 20px 60px #b2b2b2, -20px -20px 60px #ffffff;
+}
+.tab thead {
+  height: 3rem;
+  background-color: rgb(135, 191, 210);
+  text-align: center;
+  font-size: 1.3rem;
+}
+.tab td {
+  height: 2rem;
+
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.tab tr {
+  height: 2rem;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
