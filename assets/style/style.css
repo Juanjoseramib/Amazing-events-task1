@@ -108,8 +108,9 @@ table {
 }
 .tab thead {
   height: 3rem;
-  background-color: rgb(135, 191, 210);
+  background-color: rgb(23, 75, 230);
   text-align: center;
+  color: white;
   font-size: 1.3rem;
 }
 .tab td {
