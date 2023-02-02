@@ -10,7 +10,7 @@
       href="./assets/images/Logo Amazing Events.png"
       type="image/x-icon"
     />
-    <title>Inicio | Amazing Events</title>
+    <title>Home | Amaing Events</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,40 +19,70 @@
     />
   </head>
   <body>
-    <header
-      class="d-flex justify-content-sm-between align-items-center border-bottom border-dark-subtle navbar navbar-expand-lg bd-navbar sticky-top"
-    >
-      <a href="./index.html" class="Lognav ps-5"
-        ><img src="./assets/images/Logo Amazing Events.png" alt="Logo"
-      /></a>
-
-      <nav class="pe-5 d-flex gap-4 flex-wrap flex-lg-nowrap">
-        <a
-          href="./index.html"
-          class="text-black bg-light btn d-flex align-items-center justify-content-center"
-          >Home</a
-        >
-
-        <a
-          href="./assets/html/upevents.html"
-          class="text-black bg-light btn d-flex align-items-center justify-content-center"
-          >Upcoming Events</a
-        >
-        <a
-          href="./assets/html/pastevents.html"
-          class="text-black bg-light btn d-flex align-items-center justify-content-center"
-          >Past Events</a
-        >
-        <a
-          href="./assets/html/contact.html"
-          class="text-black bg-light btn d-flex align-items-center justify-content-center"
-          >Contact</a
-        >
-        <a
-          href="./assets/html/stats.html"
-          class="text-black bg-light btn d-flex align-items-center justify-content-center"
-          >Stats</a
-        >
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand Lognav bg-primary"
+            style="width: 8rem; height: 4rem"
+            href="./index.html"
+            ><img src="./assets/images/Logo Amazing Events.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end divnav"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav d-flex gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex align-items-center justify-content-center bg-body-tertiary"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center bg-body-tertiary"
+                  href="./assets/html/upevents.html"
+                  >Upcoming Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center bg-body-tertiary"
+                  href="./assets/html/pastevents.html"
+                  >Past Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center bg-body-tertiary"
+                  href="./assets/html/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center bg-body-tertiary"
+                  href="./assets/html/stats.html"
+                  >Stats</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="d-flex flex-column gap-4">
@@ -62,29 +92,21 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active car">
-            <a href="./index.html" class="text-decoration-none"
-              ><h2>Home</h2></a
-            >
+            <a href="#" class="text-decoration-none"><h2>Home</h2></a>
           </div>
           <div class="carousel-item car1">
-            <a href="./assets/html/upevents.html" class="text-decoration-none"
+            <a href="#" class="text-decoration-none"
               ><h2>Upcoming Events</h2></a
             >
           </div>
           <div class="carousel-item car2">
-            <a href="./assets/html/pastevents.html" class="text-decoration-none"
-              ><h2>Past Events</h2></a
-            >
+            <a href="#" class="text-decoration-none"><h2>Past Events</h2></a>
           </div>
           <div class="carousel-item car3">
-            <a href="./assets/html/contact.html" class="text-decoration-none"
-              ><h2>Contact</h2></a
-            >
+            <a href="#" class="text-decoration-none"><h2>Contact</h2></a>
           </div>
           <div class="carousel-item car4">
-            <a href="./assets/html/stats.html" class="text-decoration-none"
-              ><h2>Stats</h2></a
-            >
+            <a href="#" class="text-decoration-none"><h2>Stats</h2></a>
           </div>
         </div>
         <button
@@ -113,7 +135,8 @@
         </button>
       </div>
       <div
-        class="d-flex flex-wrap align-items-center justify-content-around mb-3"
+        class="d-flex align-items-center justify-content-around mb-3"
+        id="divforms"
       >
         <div class="d-flex flex-wrap align-items-center gap-5">
           <div class="form-check">
@@ -172,7 +195,7 @@
             </label>
           </div>
         </div>
-        <div class="input-group bg-white s-bar" style="width: 30rem">
+        <div class="input-group bg-white" style="width: 20rem">
           <input
             type="text"
             class="form-control bg-transparent"
@@ -190,176 +213,24 @@
           </button>
         </div>
       </div>
-      <div class="d-flex flex-wrap gap-4 justify-content-center pb-5">
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Books.jpg"
-            class="card-img-top"
-            alt="Books"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Reading Time</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Cine7.jpg"
-            class="card-img-top"
-            alt="theater"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Enjoy a movie!</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Concierto de musica1.jpg"
-            class="card-img-top"
-            alt="Music Band"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Listen your favorite music</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Feria de comidas7.jpg"
-            class="card-img-top"
-            alt="Food Fair"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Try the best local food</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Fiesta de disfraces1.jpg"
-            class="card-img-top"
-            alt="Customes"
-          />
-          <div class="card-body">
-            <h5 class="card-title">If scary, you win</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Maraton3.jpg"
-            class="card-img-top"
-            alt="Museum"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Break your Records</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./assets/images/Salida al museo5.jpg"
-            class="card-img-top"
-            alt="Museum"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Museum Secret</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div
-              class="card-foot d-flex align-items-center justify-content-around"
-            >
-              <h6><span>price</span> $100</h6>
-              <a href="./assets/html/events.html" class="btn btn-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+      <div
+        class="d-flex flex-wrap gap-4 justify-content-center pb-5"
+        id="cont_cards"
+      ></div>
     </main>
     <footer class="d-flex align-items-center justify-content-between">
       <div class="d-flex smicons gap-5 ps-4">
-        <a href="#"
+        <a href="https://es-la.facebook.com"
           ><img
             src="./assets/images/facebook-svgrepo-com.svg.svg"
             alt="Facebook"
         /></a>
-        <a href="#"
+        <a href="https://www.instagram.com"
           ><img
             src="./assets/images/instagram-f-svgrepo-com.svg.svg"
             alt="Instagram"
         /></a>
-        <a href="#"
+        <a href="https://www.whatsapp.com"
           ><img
             src="./assets/images/whatsapp-svgrepo-com.svg.svg"
             alt="Whatsapp"
@@ -367,6 +238,8 @@
       </div>
       <h2 class="pe-5">Cohort</h2>
     </footer>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
