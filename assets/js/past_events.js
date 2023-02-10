@@ -1,4 +1,5 @@
 let list = data;
+let events = list.events;
 
 let template = "";
 
