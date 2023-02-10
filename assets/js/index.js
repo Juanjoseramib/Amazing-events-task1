@@ -20,7 +20,7 @@ function addCards(list, element) {
 
 function crearCards(list) {
   return `<div class="card" style="width: 18rem">
-        <img src=" ${list.image} " class="card-img-top" alt="Books" />
+        <img src=" ${list.image} " class="card-img-top" alt="Books"/>
         <div class="card-body d-flex flex-column justify-content-around">
           <h5 class="card-title">${list.name}</h5>
           <p class="card-text">${list.description}</p>

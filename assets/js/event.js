@@ -1,11 +1,14 @@
 const divEvent = document.getElementById("cont_event");
+
 const params = new URLSearchParams(location.search);
 
 const id = params.get("id");
+
 const events = data.events.find((event) => event._id === id);
 
-createEvent(events, divEvent);
-function createEvent(event, container) {
+createEvents(events, divEvent);
+
+function createEvents(event, container) {
   container.innerHTML = `<img src="${event.image}" alt="${event.category}" />
         <div>
           <h3 class="event-tittle">${event.name}</h3>

@@ -9,11 +9,11 @@ const $upSearch = document.getElementById("search_upinput");
 
 // Crear cards
 
-addUpCards(list, divContUp);
+addUpCards(events, divContUp);
 function addUpCards(obj, element) {
-  let curDate = new Date(obj.currentDate);
+  let curDate = new Date(data.currentDate);
   let template = " ";
-  for (let event of obj.events) {
+  for (let event of obj) {
     let upDate = new Date(event.date);
     if (upDate >= curDate) {
       template += createUpCards(event);
@@ -24,7 +24,7 @@ function addUpCards(obj, element) {
 }
 function createUpCards(list) {
   return `<div class="card" style="width: 18rem">
-        <img src=" ${list.image} " class="card-img-top" alt="Books" />
+        <img src=" ${list.image} " class="card-img-top" alt="Books"/>
         <div class="card-body d-flex flex-column justify-content-around">
           <h5 class="card-title">${list.name}</h5>
           <p class="card-text">${list.description}</p>
@@ -32,7 +32,7 @@ function createUpCards(list) {
             <h6>
               <span>price</span> ${list.price}
             </h6>
-            <a href="./assets/html/events.html?id=${list._id}" class="btn btn-primary">
+            <a href="/assets/html/events.html?id=${list._id}" class="btn btn-primary">
               Read More
             </a>
           </div>
@@ -61,7 +61,7 @@ function createUpDiv(cate) {
  </div>`;
 }
 
-// Funciones
+// Funcion para filtrar checkbox
 $upChecks.addEventListener("change", (event) => {
   const searchValue = $upSearch.value.toLowerCase();
   const results = searchList(searchValue, events);
@@ -80,6 +80,8 @@ function filterEventChecks(list) {
   }
   return list.filter((event) => checked.includes(event.category));
 }
+
+// Funcion para filtrar search
 function searchList(searchValue, list) {
   return list.filter((event) => event.name.toLowerCase().includes(searchValue));
 }
