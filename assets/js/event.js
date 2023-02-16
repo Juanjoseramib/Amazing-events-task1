@@ -1,25 +1,24 @@
+// importar funciones
+import {urlApi,
+  createEvents,
+} from '../module/functions.js';
+
+
 const divEvent = document.getElementById("cont_event");
 
-const params = new URLSearchParams(location.search);
 
-const id = params.get("id");
+fetch(urlApi)
+.then(response => response.json())
+.then(data => {
+  const events = data.events
+  
+  const params = new URLSearchParams(location.search);
+  
+  const id = params.get("id");
+  
+  const detail = events.find((event) => event._id == id);
+  
+  createEvents(detail, divEvent);
 
-const events = data.events.find((event) => event._id === id);
+}).catch (error=> console.log("Hey please take a look to this error! " + error) )
 
-createEvents(events, divEvent);
-
-function createEvents(event, container) {
-  container.innerHTML = `<img src="${event.image}" alt="${event.category}" />
-        <div>
-          <h3 class="event-tittle">${event.name}</h3>
-          <p><b>Description:</b><br/>${event.description}</p>
-          <ul>
-            <li><b>Date:</b> ${event.date}</li>
-            <li><b>Category:</b> ${event.category}</li>
-            <li><b>Place:</b> ${event.place}</li>
-            <li><b>Capacity:</b> ${event.capacity}</li>
-            <li><b>Assistance:</b> ${event.assistance}</li>
-            <li><b>Price:</b> ${event.price}</li>
-          </ul>
-        </div>`;
-}
